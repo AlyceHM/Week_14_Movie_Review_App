@@ -2,7 +2,7 @@
 
 import React from "react" 
 import Card from 'react-bootstrap/Card';
-// import ReviewList from './ReviewList';
+import ReviewList from './ReviewList';
 // import Stars from './Stars';
 
 export default class Movies extends React.Component {
@@ -17,6 +17,7 @@ export default class Movies extends React.Component {
           image: props.image,
           summary: props.summary,
           released: props.released,
+          review: props.review,
           // stars: props.stars
         };
       }
@@ -33,11 +34,14 @@ export default class Movies extends React.Component {
                 {this.state.released}
                 <br />
                 {this.state.image}
+                {this.state.review}
+            
               </div>
             </Card.Body>
             <Card.Footer className="text-muted">
               {/* <Stars /> */}
-              {/* <ReviewList /> */}
+              <ReviewList review = {this.state.review} />
+              
             </Card.Footer>
           </Card>
         )

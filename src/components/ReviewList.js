@@ -5,7 +5,7 @@ import ReviewForm from "./ReviewForm";
 //import Card from 'react-bootstrap/Card';
 
 export default class ReviewList extends React.Component
-console.log("This works");
+
 {
 
     constructor(props) {
@@ -37,7 +37,7 @@ render() {
     return (
         <div>
             <ReviewForm
-            review={review.review}
+            review={this.state.review}
             />
             <form onSubmit={this.handleSubmit}>
             </form>
@@ -87,5 +87,4 @@ render() {
     //   }
     }
 
-    console.log("This works");
-    
+  

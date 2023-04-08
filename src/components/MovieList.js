@@ -20,6 +20,7 @@ export default class MovieList extends React.Component {
                     image: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KgavuSioQw2615d7L4Sen77-NLROig5P4g&usqp=CAU" alt="Movie Promo"></img>,
                     summary: "Cher Horowitz surfs the highs and lows of high school and mid 90's fashion.",
                     released: "1995",
+                    review: "This is a great movie."
         }
     } />
 
